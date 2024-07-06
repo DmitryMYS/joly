@@ -455,6 +455,11 @@ body::-webkit-scrollbar {
   padding: 0px 8px;
 }
 
+@media (max-width: 1024px) {
+  .main__slider-pic:nth-child(2) {
+    margin-top: 100px;
+  }
+}
 @media (max-width: 540px) {
   .main__text-content {
     font-size: 3.8888888889vw;

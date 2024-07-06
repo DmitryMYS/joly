@@ -420,16 +420,18 @@ body{
 		max-width: 100%;
 		height: 100%;
 		overflow: hidden;
+		
 	}
 
 	&__slider-pic {
 		position: absolute;
 		width: 100%;
 		height: 110vh;
+		
 	}
-	&__slider-pic:nth-child(1){
-		// margin-top: -170px;
-	}
+	// &__slider-pic:nth-child(2){
+	// 	margin-top: 80px;
+	// }
 
 	&__slider-pic-image {
 		height: 100vh;
@@ -518,7 +520,14 @@ body{
 }
 .icon {
 }
-
+@media (max-width: 1024px){
+	.main__slider-pic:nth-child(2){
+		margin-top: 100px;
+	}
+	// .main__slider-pic{
+	// 	margin-top: 100px;
+	// }
+}
 @media (max-width: 540px) {
 	.main__text-content{
 		font-size: 3.8888888889vw;
