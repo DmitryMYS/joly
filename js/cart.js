@@ -803,10 +803,11 @@ let headerCart = document.querySelector('.header-bottom-right__cost');
 				
 			
 				let cart = JSON.parse(jsonString);
-			
-				let totalPrice = cart.reduce((sum, item) => {
+				let totalPrice = 0;
+				if (cart){
+				totalPrice = cart.reduce((sum, item) => {
 					return sum + item.count * item.price;
-				}, 0);
+				}, 0);}
 			
 				
 				// totalDue.innerText = `${parseFloat(totalPrice)} USD`; 
