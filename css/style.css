@@ -79,6 +79,15 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
+
 body {
   display: block;
   background-color: #000;
@@ -1907,6 +1916,9 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 420px) {
+  .modal-sizecare {
+    padding-top: 40px;
+  }
   .modal__cart {
     width: 100vw;
   }

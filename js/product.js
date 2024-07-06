@@ -284,7 +284,7 @@ category.forEach(item => {
 		if(!(item.id == productId)){
 	let recSlide = document.createElement('a');
 	recSlide.classList.add('rec__slider-slide');
-	recSlide.setAttribute('href', `/product.html?id=${item.id}`);
+	recSlide.setAttribute('href', `product.html?id=${item.id}`);
 
 	recSlide.innerHTML = `
 			<div class="rec__slider-slide-img"><img src="${item.images[0]}" alt=""></div>
