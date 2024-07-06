@@ -46,7 +46,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 // * {
 // 	outline: solid red;
 // }
-
+* {
+    -webkit-tap-highlight-color: transparent;
+}
 button:focus,
 a:focus {
     outline: none;
@@ -2284,9 +2286,9 @@ body{
 
 }
 
-@media  (max-width: 420px) {
-	.modal-sizecare{
-		padding-top: 40px;
+@media (max-width: 420px) {
+	.modal__sizecare{
+		padding: 40px;
 	}
 	.modal__cart{
 		width: 100vw;
