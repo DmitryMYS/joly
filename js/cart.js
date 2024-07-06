@@ -893,7 +893,7 @@ function createCartItemElement(storageProduct) {
 	let cartProduct = document.createElement('div');
 	cartProduct.classList.add("modal__cart-product");
 	cartProduct.setAttribute('id', product.id);
-	cartProduct.innerHTML = `<a href="/product.html?id=${product.id}" class="modal__cart-product-img">
+	cartProduct.innerHTML = `<a href="product.html?id=${product.id}" class="modal__cart-product-img">
 									<img src="${product.images[0]}" alt="">
 								</a>
 								<div class="modal__cart-product-info">

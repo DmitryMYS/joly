@@ -43,7 +43,7 @@ categoryTitle.textContent = `${category[0].id}`;
 			if(!(product === category[0])){
 			let item = document.createElement('a');
 			item.classList.add('category__item');
-			item.setAttribute('href', `/product.html?id=${product.id}`);
+			item.setAttribute('href', `product.html?id=${product.id}`);
 
 			item.innerHTML = `
 					<div class="category__item-content">
