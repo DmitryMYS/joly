@@ -47,6 +47,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 // 	outline: solid red;
 // }
 
+button:focus,
+a:focus {
+    outline: none;
+}
+
 body{
 	display: block;
 	background-color: #000;
@@ -2280,6 +2285,9 @@ body{
 }
 
 @media  (max-width: 420px) {
+	.modal-sizecare{
+		padding-top: 40px;
+	}
 	.modal__cart{
 		width: 100vw;
 	}
