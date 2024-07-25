@@ -1212,9 +1212,9 @@ cartButton.addEventListener('click',() =>{
 });
 
 
-let yourOrder = document.querySelector('.your-order');
+let yourOrder = document.querySelectorAll('.your-order');
 
-yourOrder.addEventListener('click', () => {
+yourOrder.forEach( item => item.addEventListener('click', () => {
 	let modalsContainer = document.querySelector('.modals');
 	modalsContainer.innerHTML = `<div class="modal">
 				<div class="modal-container">
@@ -1272,3 +1272,4 @@ yourOrder.addEventListener('click', () => {
 		closePopup();
 		})
 })
+)
